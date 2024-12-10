@@ -13,31 +13,29 @@
         img.sm-logo{
             text-align: center;
             width:100%;
-            max-width:640px;
         }
-        div.sm-hangings{
-            min-height: 62vh;
-            background-image: url('./hangings.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 0;
-            top: 0;
+        table.sm-hangings{
             width: 100%;
-            z-index: 100;
+        }
+        div.sm-hangings-left, div.sm-hangings-right{
+            text-align:center;
+        }
+        div.sm-hangings-left img, div.sm-hangings-right img{
+            height: 50vh;
         }
         div.sm-header{
             position: absolute;
             left: 0;
             top: 0;
             width: 100%;
-            min-width: 1280px;
             z-index: 90;
             padding:0;
             min-height: 5vh;
+            overflow-x: hidden;
         }
         div.sm-header img{
             width:100%;
+            min-width: 1280px;
             padding: 0;
             margin:0;
         }
@@ -52,17 +50,38 @@
             width: 100%;
             z-index: 50;
         }
+        /*
+        * Focus on meenakshi temple on narrow screens
+        */
+        @media screen and (max-width: 480px) {
+            div.sm-footer {
+                background-position: -40vw;
+            }
+        }
     </style>
   </head>
   <body>
     <div class="container-fluid sm-header">
         <img src="./header.png"/>
     </div>
-    <div class="container-fluid sm-hangings">
-        <!-- Content here -->
+    <div class="container-fluid">
+        <table class="sm-hangings">
+            <tr>
+                <td width="5%">
+                    <div class="sm-hangings-left">
+                        <img src="./hangings.png"/>
+                    </div>
+                </td>
+                <td width="90%"></td>
+                <td width="5%">
+                    <div class="sm-hangings-right">
+                        <img src="./hangings.png"/>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
     <div class="container-fluid sm-footer">
-        <!-- Content here -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
