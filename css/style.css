@@ -96,6 +96,7 @@ div.sm-play img{
 */
 @media screen and (max-width: 480px) {
     div.sm-footer {
+        min-height: 40vh;
         background-position: -40vw;
     }
     .sm-welcome{
