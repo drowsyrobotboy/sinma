@@ -4,87 +4,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SinMa | சிந்మా </title>
-    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        body{
-            background-color: #F5F1EB;
-        }
-        img.sm-logo{
-            text-align: center;
-            width:100%;
-        }
-        table.sm-hangings{
-            width: 100%;
-        }
-        div.sm-hangings-left, div.sm-hangings-right{
-            text-align:center;
-        }
-        div.sm-hangings-left img, div.sm-hangings-right img{
-            height: 50vh;
-        }
-        div.sm-header{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            z-index: 90;
-            padding:0;
-            min-height: 5vh;
-            overflow-x: hidden;
-        }
-        div.sm-header img{
-            width:100%;
-            min-width: 1280px;
-            padding: 0;
-            margin:0;
-        }
-        div.sm-footer{
-            min-height: 50vh;
-            background-image: url('./meenakshi.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            z-index: 50;
-        }
-        /*
-        * Focus on meenakshi temple on narrow screens
-        */
-        @media screen and (max-width: 480px) {
-            div.sm-footer {
-                background-position: -40vw;
-            }
-        }
-        @media screen and (max-width: 375px) {
-            div.sm-footer {
-                background-position: -30vw;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container-fluid sm-header">
-        <img src="./header.png"/>
+        <img src="images/header.png"/>
     </div>
     <div class="container-fluid">
         <table class="sm-hangings">
             <tr>
                 <td width="5%">
                     <div class="sm-hangings-left">
-                        <img src="./hangings.png"/>
+                        <img src="images/hangings.png"/>
                     </div>
                 </td>
-                <td width="90%"></td>
+                <td width="90%" class="sm-hg-middle">
+                    <div class="sm-main">
+                        <img class="sm-ganesh" src="images/ganesh.png"/>
+                        <br/>
+                        <span class="eb-garamond-regular sm-welcome">
+                            Welcome to the Wedding Celebrations of
+                        </span>
+                        <br/>
+                        <span class="great-vibes-regular sm-names">
+                            Sindhuja &nbsp; &amp; &nbsp; Maruthi
+                        </span>
+                        <br/>
+                        <button type="button" class="btn btn-lg btn-outline-secondary sm-ls-button eb-garamond-regular" data-bs-toggle="modal" data-bs-target="#smLivestream">
+                            Watch the Livestream
+                        </button>
+                        <br/>
+                        <img class="sm-sinma" src="images/sinma.png"/>
+                    </div>
+                </td>
                 <td width="5%">
                     <div class="sm-hangings-right">
-                        <img src="./hangings.png"/>
+                        <img src="images/hangings.png"/>
                     </div>
                 </td>
             </tr>
         </table>
+    </div>
+    <div class="container-fluid">
+        <div class="modal fade" id="smLivestream" tabindex="-1" role="dialog" aria-labelledby="smLivestreamLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen sm-ls-modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body sm-ls-body">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bhudWDoChfM?si=rvpMqkSoV94Vofmp&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer sm-ls-footer">
+                  <button type="button" class="btn btn-lg btn-outline-secondary sm-ls-button eb-garamond-regular" style="font-size: 1rem;" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
     <div class="container-fluid sm-footer">
     </div>

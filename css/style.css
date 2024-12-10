@@ -1,0 +1,128 @@
+body{
+    background-color: #F5F1EB;
+}
+img.sm-logo{
+    text-align: center;
+    width:100%;
+}
+table.sm-hangings{
+    width: 100%;
+}
+div.sm-hangings-left, div.sm-hangings-right{
+    text-align:center;
+}
+div.sm-hangings-left img, div.sm-hangings-right img{
+    height: 50vh;
+}
+div.sm-header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 90;
+    padding:0;
+    min-height: 5vh;
+    overflow-x: hidden;
+}
+div.sm-header img{
+    width:100%;
+    min-width: 1280px;
+    padding: 0;
+    margin:0;
+}
+div.sm-footer{
+    min-height: 50vh;
+    background-image: url('../images/meenakshi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 50;
+}
+div.sm-main{
+    text-align:center;
+    color: #262626;
+    margin-top: 3rem;
+}
+div.sm-play img{
+    max-height: 128px;
+}
+.eb-garamond-regular {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+.sm-welcome{
+    text-align: justify;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.sm-ganesh{
+    height: 5rem; 
+    margin: 2rem;
+}
+.sm-sinma{
+    height: 2rem; 
+    margin: 2rem;
+}
+.sm-names{
+    line-height: 6rem;
+    text-align: justify;
+    font-size: 3rem;
+}
+.sm-ls-button{
+    text-transform: uppercase;
+    border:#262626 solid .1rem;
+    color: #262626;
+}
+.sm-ls-button:hover{
+    background-color: #262626;
+}
+.sm-ls-body, .sm-ls-footer{
+    padding:0;
+    border: none;
+    background-color: #F5F1EB;
+}
+/*
+* Focus on meenakshi temple on narrow screens
+*/
+@media screen and (max-width: 480px) {
+    div.sm-footer {
+        background-position: -40vw;
+    }
+    .sm-welcome{
+        text-align: justify;
+        font-size: 1rem;
+    }
+    .sm-ganesh{
+        height: 3rem; 
+        margin: 1rem;
+    }
+    .sm-sinma{
+        height: 1.8rem; 
+        margin: 1rem;
+    }
+    .sm-names{
+        line-height: 4rem;
+        font-size: 1.6rem;
+    }
+    .sm-ls-button{
+        font-size: 1rem;
+    }
+    div.sm-main{
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    div.sm-footer {
+        background-position: -30vw;
+    }
+}
