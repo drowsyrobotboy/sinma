@@ -97,7 +97,7 @@ div.sm-play img{
 @media screen and (max-width: 480px) {
     div.sm-footer {
         min-height: 40vh;
-        background-position: -40vw;
+        background-position: -15vw;
     }
     .sm-welcome{
         text-align: justify;
@@ -120,10 +120,5 @@ div.sm-play img{
     }
     div.sm-main{
         margin-top: 1rem;
-    }
-}
-@media screen and (max-width: 375px) {
-    div.sm-footer {
-        background-position: -30vw;
     }
 }
