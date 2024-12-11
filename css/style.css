@@ -42,9 +42,11 @@ div.sm-footer{
     z-index: 50;
 }
 div.sm-main{
+    position: relative;
     text-align:center;
     color: #262626;
     margin-top: 3rem;
+    z-index:100;
 }
 div.sm-play img{
     max-height: 128px;
@@ -79,12 +81,21 @@ div.sm-play img{
     font-size: 3rem;
 }
 .sm-ls-button{
+    background-color: #F5F1EB;
     text-transform: uppercase;
     border:#262626 solid .1rem;
     color: #262626;
 }
 .sm-ls-button:hover{
     background-color: #262626;
+}
+.sm-ls-cls-button{
+    text-transform: uppercase;
+    border:#F5F1EB solid .1rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    z-index: 110;
 }
 .sm-ls-body, .sm-ls-footer{
     padding:0;
@@ -97,7 +108,8 @@ div.sm-play img{
 @media screen and (max-width: 480px) {
     div.sm-footer {
         min-height: 40vh;
-        background-position: -15vw;
+        background-position: 50%;
+        background-image: url('../images/meenakshi-small.png');
     }
     .sm-welcome{
         text-align: justify;
@@ -120,5 +132,9 @@ div.sm-play img{
     }
     div.sm-main{
         margin-top: 1rem;
+    }
+    .sm-ls-cls-button{
+        font-size: 1rem;
+        right: 1rem;
     }
 }
